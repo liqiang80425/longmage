@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfBaseLesson.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBaseLesson"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <!--<UniformGrid Columns="3" Height="150" Width="200">
+        <Button Content="注册" Height="40" Width="50"></Button>
+        <Button Content="登录" Height="40" Width="50"></Button>
+        <Button Content="退出" Height="40" Width="50"></Button>
+        <Button Content="退出1" Height="40" Width="50"></Button>
+        <Button Content="退出2" Height="40" Width="50"></Button>
+    </UniformGrid>-->
+    <!--<StackPanel Height="150" Orientation="Horizontal">
+        <Button Content="注册" Height="40" Width="50"></Button>
+        <Button Content="登录" Height="40" Width="50"></Button>
+        <Button Content="退出" Height="40" Width="50"></Button>
+        <Button Content="退出1" Height="40" Width="50"></Button>
+        <Button Content="退出2" Height="40" Width="50"></Button>
+        <Button Content="退出3" Height="40" Width="50"></Button>
+    </StackPanel>-->
+    <!--BorderThickness 0,0,5,0(顺时针：左上右下)   5,0(左右,上下)-->
+    <Border Height="150" Width="150" Background="Green" BorderBrush="Black" BorderThickness="5,0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Content="退出1" Height="40" Width="50"></Button>
+            <Button Content="退出2" Height="40" Width="50" Grid.Row="1"></Button>
+        </Grid>
+       
+    </Border>
+</Window>

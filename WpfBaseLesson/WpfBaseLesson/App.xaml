@@ -1,0 +1,16 @@
+﻿<Application x:Class="WpfBaseLesson.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfBaseLesson"
+             StartupUri="CustomStyleTemplate.xaml"><!--配置主窗口-->
+    <Application.Resources>
+         <!--配置 启动项 资源-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary/ButtonStyleDic.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Dictionary1.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+      
+    </Application.Resources>
+</Application>
