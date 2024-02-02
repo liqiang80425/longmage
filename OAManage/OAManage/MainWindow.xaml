@@ -45,16 +45,16 @@
                     <TextBlock Text="账号" Margin="0,0,0,4"></TextBlock>
 
                     <!--第一行第二列-->
-                    <TextBox Grid.Column="1" Margin="0,4"></TextBox>
+                    <TextBox Grid.Column="1" Margin="0,4"  Text="{Binding Account}" ></TextBox>
 
                     <!--第二行第一列-->
-                    <TextBlock Text="密码"  Grid.Row="1" Margin="0,4"></TextBlock>
+                    <TextBlock Text="密码"  Grid.Row="1" Margin="0,4" ></TextBlock>
 
                     <!--第二行第二列-->
-                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,4"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,4" Text="{Binding Pwd}" ></TextBox>
 
                     <!--第三行 2列合并-->
-                    <Button Content="登录" Grid.Row="2" Height="30" Grid.ColumnSpan="2" FontSize="20" Background="LightBlue"></Button>
+                    <Button Content="登录" Grid.Row="2" Height="30" Grid.ColumnSpan="2" FontSize="20" Background="LightBlue" Click="Btn_Login"></Button>
                 </Grid>
             </Border>
 
