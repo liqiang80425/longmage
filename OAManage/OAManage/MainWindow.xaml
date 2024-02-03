@@ -54,7 +54,8 @@
                     <TextBox Grid.Row="1" Grid.Column="1" Margin="0,4" Text="{Binding Pwd}" ></TextBox>
 
                     <!--第三行 2列合并-->
-                    <Button Content="登录" Grid.Row="2" Height="30" Grid.ColumnSpan="2" FontSize="20" Background="LightBlue" Click="Btn_Login"></Button>
+                    <!--绑定命令-->
+                    <Button Content="登录" Grid.Row="2" Height="30" Grid.ColumnSpan="2" FontSize="20" Background="LightBlue"  Command="{Binding Command}"></Button>
                 </Grid>
             </Border>
 

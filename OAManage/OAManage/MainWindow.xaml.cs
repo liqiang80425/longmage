@@ -37,24 +37,24 @@ namespace OAManage
         }
         
 
-        /// <summary>
-        /// 登录(单击登录按钮执行)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Btn_Login(object sender, RoutedEventArgs e)
-        {
-            if (this.accountModel.Account == "longma" && this.accountModel.Pwd == "123")
-            {
-                MessageBox.Show("登录成功");
-            }
-            else
-            {
-                MessageBox.Show("登录失败");
-                //清空账号 密码文本框
-                this.accountModel.Account = "";
-                this.accountModel.Pwd = "";
-            }
-        }
+        ///// <summary>
+        ///// 登录(单击登录按钮执行)
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private void Btn_Login(object sender, RoutedEventArgs e)
+        //{
+        //    if (this.accountModel.Account == "longma" && this.accountModel.Pwd == "123")
+        //    {
+        //        MessageBox.Show("登录成功");
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("登录失败");
+        //        //清空账号 密码文本框
+        //        this.accountModel.Account = "";
+        //        this.accountModel.Pwd = "";
+        //    }
+        //}
     }
 }
