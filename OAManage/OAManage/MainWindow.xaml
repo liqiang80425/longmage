@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OAManage"
+        xmlns:pwdns="clr-namespace:OAManage.Base"
         mc:Ignorable="d"
         Title="在线办公管理系统" Height="450" Width="800">
     <Grid>
@@ -51,7 +52,10 @@
                     <TextBlock Text="密码"  Grid.Row="1" Margin="0,4" ></TextBlock>
 
                     <!--第二行第二列-->
-                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,4" Text="{Binding Pwd}" ></TextBox>
+                    <!--<TextBox Grid.Row="1" Grid.Column="1" Margin="0,4" Text="{Binding Pwd}" ></TextBox>-->
+                    <PasswordBox Grid.Row="1" Grid.Column="1" Margin="0,4" 
+                                 pwdns:PasswordBoxExtend.IsBind="True"
+                                 pwdns:PasswordBoxExtend.MyPwd="{Binding Pwd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></PasswordBox>
 
                     <!--第三行 2列合并-->
                     <!--绑定命令-->

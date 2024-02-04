@@ -19,3 +19,4 @@ E:\自行课程资源\OAManage\OAManage\obj\Debug\net6.0-windows\refint\OAManage
 E:\自行课程资源\OAManage\OAManage\obj\Debug\net6.0-windows\OAManage.pdb
 E:\自行课程资源\OAManage\OAManage\obj\Debug\net6.0-windows\OAManage.genruntimeconfig.cache
 E:\自行课程资源\OAManage\OAManage\obj\Debug\net6.0-windows\ref\OAManage.dll
+E:\自行课程资源\OAManage\OAManage\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

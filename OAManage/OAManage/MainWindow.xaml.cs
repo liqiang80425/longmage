@@ -1,4 +1,5 @@
 ﻿using OAManage.Models;
+using OAManage.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,39 +23,13 @@ namespace OAManage
     /// </summary>
     public partial class MainWindow : Window
     {
-        /// <summary>
-        /// 账号model
-        /// </summary>
-        private AccountModel accountModel;
-
         public MainWindow()
         {
             InitializeComponent();
 
-            //设置数据上下文
-            accountModel=new AccountModel();
-            this.DataContext = accountModel;
+            //设置数据上下文 （视图模型）
+            AccountViewModel accountViewModel = new AccountViewModel();
+            this.DataContext = accountViewModel;
         }
-        
-
-        ///// <summary>
-        ///// 登录(单击登录按钮执行)
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-        //private void Btn_Login(object sender, RoutedEventArgs e)
-        //{
-        //    if (this.accountModel.Account == "longma" && this.accountModel.Pwd == "123")
-        //    {
-        //        MessageBox.Show("登录成功");
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("登录失败");
-        //        //清空账号 密码文本框
-        //        this.accountModel.Account = "";
-        //        this.accountModel.Pwd = "";
-        //    }
-        //}
     }
 }
